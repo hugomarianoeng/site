@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Hugo Mariano</title>
+        <style>
+            body{
+                background: #e5e5e5;
+                color: #25282b;
+                text-align: center;
+            }
+
+            p{
+                text-align: center;
+            }
+            
+            a{
+                border: solid transparent 10px;
+            }
+
+            #footer{
+                font-size: smaller;
+            }
+
+            .hide{
+                display: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <img src="Imagem1.png" alt="Imagem da Logomarca" width="300px">
+        <p>
+           <h1> Site em construção! </h1>
+        </p>
+        <p>
+            <a href="https://api.whatsapp.com/send?phone=5516993181331&text=Ol%C3%A1%2C%20Hugo"><img src="icone1.png" ></a>
+            <a href="https://www.facebook.com/hugo.mariano1"><img src="icone2.png" ></a>
+            <a href="https://www.linkedin.com/in/hugo-mariano-60916987/"><img src="icone3.png" ></a>
+        </p>
+
+        <p id="footer">Todos os direitos reservados</p>
+
+        <script>
+            document
+                .querySelector("button.fat")
+                .addEventListener("click", function(){
+                document
+                    .querySelector("#footer")
+                    .classList
+                    .toggle("hide")
+                })    
+
+        </script>
+
+    </body>
+
+</html>
