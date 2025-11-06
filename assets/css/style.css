@@ -7,7 +7,7 @@
   --mf-sky: #6DB7E6;
   --mf-leaf: #7BC97B;
   --mf-tan: #E6D7B7;
-  
+
   --bg: var(--mf-cream);
   --text: var(--mf-teal);
   --heading: var(--mf-eggplant);
@@ -39,10 +39,46 @@ html, body {
 
 .section {
   padding: 100px 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .section.muted {
   background: var(--mf-tan);
+}
+
+.section-illustration {
+  position: absolute;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
+  max-width: 400px;
+  width: 40%;
+  will-change: transform, opacity;
+}
+
+.section-illustration.left {
+  left: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.section-illustration.right {
+  right: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.section-illustration.center {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.05;
+}
+
+.section > .container {
+  position: relative;
+  z-index: 1;
 }
 
 h1, h2, h3, h4 {
@@ -345,26 +381,40 @@ nav a:hover {
   h1 {
     font-size: 44px;
   }
-  
+
   h2 {
     font-size: 36px;
   }
-  
+
   h3 {
     font-size: 26px;
   }
-  
+
   .section {
     padding: 60px 0;
   }
-  
+
   .hero {
     padding: 80px 0 60px;
   }
-  
+
   nav a {
     margin: 0 8px;
     font-size: 14px;
+  }
+
+  .section-illustration {
+    opacity: 0.04;
+    max-width: 200px;
+    width: 50%;
+  }
+
+  .section-illustration.left {
+    left: -30px;
+  }
+
+  .section-illustration.right {
+    right: -30px;
   }
 }
 
@@ -372,17 +422,31 @@ nav a:hover {
   h1 {
     font-size: 36px;
   }
-  
+
   h2 {
     font-size: 30px;
   }
-  
+
   .lead {
     font-size: 18px;
   }
-  
+
   .btn {
     padding: 12px 20px;
     font-size: 14px;
+  }
+
+  .section-illustration {
+    opacity: 0.03;
+    max-width: 150px;
+    width: 40%;
+  }
+
+  .section-illustration.left {
+    left: -20px;
+  }
+
+  .section-illustration.right {
+    right: -20px;
   }
 }

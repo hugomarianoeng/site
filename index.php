@@ -8,8 +8,9 @@ $BASE_URL = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\');
 <main id="top">
   <!-- Hero -->
   <section id="hero" class="section hero">
+    <img src="<?= $BASE_URL ?>/assets/img/hero-illustration.svg" alt="" class="section-illustration right" aria-hidden="true">
     <div class="container">
-      <h1>Hugo de Oliveira Mariano</h1>
+      <h1>Hugo Mariano</h1>
       <p class="subtitle">Product Marketing & Marketing Analytics</p>
       <p class="meta">Galway, Ireland • EU Right to Work</p>
       <p class="lead">
@@ -21,13 +22,14 @@ $BASE_URL = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\');
       <div class="cta-row">
         <a class="btn primary" href="mailto:hugo.mariano@hotmail.com">Email Hugo</a>
         <a class="btn outline" href="https://linkedin.com/in/eng-hugo-mariano" target="_blank" rel="noopener">View LinkedIn</a>
-        <a class="btn outline" href="#" aria-disabled="true">Download CV</a>
+        <a class="btn outline" href="HugoMariano.pdf" aria-disabled="true">Download CV</a>
       </div>
     </div>
   </section>
 
   <!-- Featured Projects -->
   <section id="projects" class="section">
+    <img src="<?= $BASE_URL ?>/assets/img/projects-illustration.svg" alt="" class="section-illustration left" aria-hidden="true">
     <div class="container">
       <h2>Featured Projects</h2>
       <div class="grid grid-2">
@@ -57,6 +59,7 @@ $BASE_URL = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\');
 
   <!-- Skills -->
   <section id="skills" class="section">
+    <img src="<?= $BASE_URL ?>/assets/img/skills-illustration.svg" alt="" class="section-illustration right" aria-hidden="true">
     <div class="container">
       <h2>Skills &amp; Expertise</h2>
 
@@ -127,6 +130,7 @@ $BASE_URL = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\');
 
   <!-- Experience -->
   <section id="experience" class="section">
+    <img src="<?= $BASE_URL ?>/assets/img/experience-illustration.svg" alt="" class="section-illustration left" aria-hidden="true">
     <div class="container">
       <h2>Experience</h2>
 
