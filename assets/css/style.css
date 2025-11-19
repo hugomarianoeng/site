@@ -176,6 +176,28 @@ nav a:hover {
   color: var(--text);
   padding: 120px 0 100px;
   border-bottom: 2px solid var(--border);
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../img/hero-bg.png');
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+  opacity: 0.12;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
 }
 
 .hero h1 {
@@ -434,6 +456,10 @@ nav a:hover {
   .btn {
     padding: 12px 20px;
     font-size: 14px;
+  }
+
+  .hero::before {
+    display: none;
   }
 
   .section-illustration {
